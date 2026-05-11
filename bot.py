@@ -1619,6 +1619,8 @@ app.add_handler(custom_conv)
 
 utr_conv = ConversationHandler(
 
+    per_message=True,
+
     entry_points=[
 
         CallbackQueryHandler(
